@@ -82,4 +82,4 @@ function showShades() {
 var ctx = document.getElementById("test").getContext("2d");
 ctx.strokeStyle = "red";
 ctx.lineWidth = 10;
-ctx.drawStLine(0,0,10,10);
+ctx.drawStLine(0,0,50,50);
