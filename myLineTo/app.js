@@ -10,7 +10,6 @@ function testImageData(imgData, x1, y1) {
     ctx.putImageData(imgData, x1, y1);
 }
 
-
 function myLineTo(x1, y1, x2, y2, ctx) {
     var canvas = ctx.canvas,
         wd = x2 - x1,
