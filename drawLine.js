@@ -16,9 +16,9 @@ CanvasRenderingContext2D.prototype.drawLine = function(x1, y1, x2, y2) {
             b = 0,
             a = 0;
         if(color.indexOf("#") > -1) {
-            r = color.slice(1,3);
-            g = color.slice(3,5);
-            b = color.slice(5,7);
+            r = parseInt(color.slice(1,3), 16);
+            g = parseInt(color.slice(3,5), 16);
+            b = parseInt(color.slice(5,7), 16);
             a = 255;
             return [r,g,b,a];
         } else if(color.indexOf("rgba") > -1) {
@@ -33,6 +33,7 @@ CanvasRenderingContext2D.prototype.drawLine = function(x1, y1, x2, y2) {
         data = imageData.data,
         slope = 1,
         rgba = getRGBA(this.strokeStyle);
+    console.log(JSON.stringify(rgba));
 
     if(wd == 0 && ht == 0) {
         slope = y1/x1;

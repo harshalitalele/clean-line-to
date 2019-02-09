@@ -80,6 +80,6 @@ function showShades() {
 
 //addCanvasEvents();
 var ctx = document.getElementById("test").getContext("2d");
-ctx.strokeStyle = "red";
+ctx.strokeStyle = "rgb(0,0,255)";
 ctx.lineWidth = 10;
 ctx.drawLine(50,0,50,50);
